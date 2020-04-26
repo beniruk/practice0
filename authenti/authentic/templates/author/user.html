@@ -1,0 +1,11 @@
+{%extends './base.html'%}
+{%block title%}user{%endblock%}
+
+{%block body%}
+<h1>hello to you {{user.first_name}}</h1>
+<ul>
+  <li>currently logged in as: {{user.username}}</li>
+  <li><a href="{% url 'logout' %}">logout</a></li>
+</ul>
+
+{%endblock%}
